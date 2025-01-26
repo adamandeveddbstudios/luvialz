@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/swiper.bundle.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="140px" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product/Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                  </li>
+                  
+                </ul>
+                <div class="d-flex" role="search">
+                  <a href="#" class="me-5"><img src="images/search.svg" alt=""></a>
+                  <a href="cart.html"><img src="images/cart.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="free-delivery">
+            FREE Delivery on every product
+          </div>
+    </header>
+    <main>
+        <div class="container py-5">
+            <h1 class="mb-5">Your Shopping Cart</h1>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Cart Items -->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row cart-item mb-3">
+                                <div class="col-md-2">
+                                    <img src="images/best1.jpg" alt="Product 1" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Glow Revive Essential Face Polish Mask</h5>
+                                    <p class="text-muted">Revive frizzy hair with argan oil and biotin for silky strands.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                        <input style="max-width:100px" type="text" class="form-control  form-control-sm text-center quantity-input" value="1">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-end">
+                                    <p class="fw-bold">$99.99</p>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row cart-item">
+                                <div class="col-md-2">
+                                    <img src="images/best2.jpg" alt="Product 2" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="card-title">Glow Revive Essential Face Polish Mask</h5>
+                                    <p class="text-muted">Revive frizzy hair with argan oil and biotin for silky strands.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button">-</button>
+                                        <input style="max-width:100px" type="text" class="form-control form-control-sm text-center quantity-input" value="2">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 text-end">
+                                    <p class="fw-bold">$49.99</p>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Continue Shopping Button -->
+                    <div class="text-start mb-4">
+                        <a href="#" class="btn site-button">
+                            <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Cart Summary -->
+                    <div class="card cart-summary">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Order Summary</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Subtotal</span>
+                                <span>$199.97</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Shipping</span>
+                                <span>$10.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Tax</span>
+                                <span>$20.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-4">
+                                <strong>Total</strong>
+                                <strong>$229.97</strong>
+                            </div>
+                            <button class="btn site-button w-100">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                    <!-- Promo Code -->
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Apply Promo Code</h5>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter promo code">
+                                <button class="btn btn-outline-secondary" type="button">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/swiper.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
